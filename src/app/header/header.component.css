@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightcoral;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  padding: 5px;
+}

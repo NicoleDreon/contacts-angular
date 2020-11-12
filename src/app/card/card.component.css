@@ -1,0 +1,26 @@
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  margin: 10px;
+  position: relative;
+}
+
+.remove-button {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+}
+
+.fa-heart,
+.fa-trash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+}
+
+.favorite {
+  color: red;
+}

@@ -1,0 +1,10 @@
+<app-header></app-header>
+
+<ul>
+  <app-card
+    *ngFor="let favorite of favorites"
+    [contactRef]="favorite"
+    (favoriteEvent)="removeFavorite(favorite)"
+    (deleteEvent)="deleteContact(favorite)"
+  ></app-card>
+</ul>

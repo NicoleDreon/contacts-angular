@@ -1,0 +1,22 @@
+<form
+  class="form"
+  #contactForm="ngForm"
+  (ngSubmit)="emitSubmitEvent(contactForm)"
+>
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" ngModel />
+  <label for="company">Company</label>
+  <input type="text" name="company" id="company" ngModel />
+  <label>Emergency Contact</label>
+  <div>
+    <label for="yes">Yes</label>
+    <input type="radio" name="emergency" id="yes" value="true" ngModel />
+    <label for="no">No</label>
+    <input type="radio" name="emergency" id="no" value="false" ngModel />
+  </div>
+  <label for="number">Number</label>
+  <input type="text" name="number" id="number" ngModel />
+  <label for="birthday">Birthday</label>
+  <input type="date" name="birthday" id="birthday" ngModel />
+  <button>Submit</button>
+</form>

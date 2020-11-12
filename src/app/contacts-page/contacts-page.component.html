@@ -1,0 +1,11 @@
+<app-header></app-header>
+<app-contact-form (submitEvent)="addContact($event)"></app-contact-form>
+
+<ul class="card-container">
+  <app-card
+    *ngFor="let contact of contacts; index as i"
+    [contactRef]="contact"
+    (deleteEvent)="deleteContact(contact)"
+    (favoriteEvent)="toggleFavorite(contact)"
+  ></app-card>
+</ul>
